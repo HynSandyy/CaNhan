@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngoc_Cute</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0 auto;
+      padding: 0;
+      color: rgb(255, 255, 255);
+      font-family: "Times New Roman", Times, serif;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+      height: fit-content;
+      background-image: linear-gradient(#70caed, #5ea6f1);
+    }
+
+    header {
+      position: relative;
+      display: flex;
+      width: 820px;
+
+      height: 40px;
+      align-items: center;
+      border-bottom: 5px dotted white;
+      letter-spacing: 0.25px;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      line-height: 20px;
+      height: 60px;
+      border-top: 5px dotted white;
+    }
+    nav {
+      position: absolute;
+      display: flex;
+      width: 55%;
+      height: inherit;
+      align-items: center;
+    }
+    nav a {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: bold;
+      color: white;
+      height: inherit;
+      text-decoration: none;
+      text-align: justify;
+    }
+    nav a:hover {
+      color: rgb(59, 82, 29);
+      text-shadow:1px 0.5px 1.5px rgb(221, 245, 127) ;
+    }
+    #drop{
+      position: relative;
+      height: inherit;
+    }
+    #drop1{
+      display: none;
+      width: 200px;
+      justify-content: space-around;
+      list-style-type: none;
+      flex-direction: column;
+      position: absolute;
+      left:-70px;
+      border-radius: 20px;
+      background-color: #70caed;
+      box-shadow: 0px 8px 16px 1px rgba(0,0,0);
+      padding: 10px 10px;
+      z-index: 1;
+    }
+    #drop:hover #drop1 {
+      display: flex;
+    }
+    #pop-up{
+      display: block;
+      background-color: #425e7b;
+    }
+    #logo {
+      font-family: Arial;
+      position: absolute;
+      right: 20px;
+      margin: 0;
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      text-rendering: #000;
+      text-shadow: 1px 1px 2px black, 0px 0px 5px #0f1ae8,
+        0px 0px 20px rgb(5, 5, 248);
+    }
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <a href="http://">Home</a>
+          <div id="drop">
+          <a href="http://" >Products</a>
+          <div id="drop1">
+            <a href="#">Product Development</a>
+            <a href="#"> Product Maketing</a>
+            </div>
+          </div>
+          <a href="http://">Services</a>
+          <a href="http://">About</a>
+          <a href="http://">Contact</a>
+        </nav>
+
+        <h2 id="logo">Blue World</h2>
+      </header>
+      <img
+        src="./img/Screenshot 2023-03-16 074304.png"
+        alt=""
+        style="width: 90%"
+      />
+      <footer>
+        <p style="text-align: center; font-size: small; font-weight: bold">
+          <i class="fa fa-copyright" style="font-size: 10px"></i>2016 Blue World
+          Tours. All rights reserved <br />Contact information: Ho Yen Ngoc |
+          20107631 | Testing date: 16 March 2023
+        </p>
+      </footer>
+      
+    </div>
+    <div class="pop-up">
+
+    </div>
+  </body>
+</html>

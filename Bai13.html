@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> danh sách sản phẩm và phóng to hình ảnh khi di chuột vào ảnh</title>
+</head>
+<style>
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+    
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    ul#list-post li {
+        border: 2px solid blue;
+        margin-right: 10px;
+    }
+    
+    ul#list-post li:hover img {
+        transform: scale(1.05);
+        border: 3px solid #bb1d1d;
+    }
+    
+    ul#list-post li img {
+        transition: all 0.25s;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .box {
+        text-align: center;
+        padding: 15px;
+    }
+    
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul id="list-post">
+            <li>
+                <div class="box">
+                    <img src="../img/flower1.jpg" alt="">
+                    <p>The description of Marguerite 1 here</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../img/flower3.jpg" alt="">
+                    <p>The description of Marguerite 1 here</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../img/flower2.jpg" alt="">
+                    <p>The description of Marguerite 1 here</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../img/flower4.jpeg" alt="">
+                    <p>The description of Marguerite 1 here</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
