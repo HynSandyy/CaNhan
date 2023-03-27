@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngoc_Cute</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0 auto;
+      padding: 0;
+      color: rgb(255, 255, 255);
+      font-family: "Times New Roman", Times, serif;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 800px;
+      height: fit-content;
+      background-image: linear-gradient(#70caed, #5ea6f1);
+    }
+
+    header {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      border-bottom: 5px dotted white;
+      letter-spacing: 0.25px;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      line-height: 20px;
+      height: 60px;
+      border-top: 5px dotted white;
+    }
+    nav {
+      position: absolute;
+      display: flex;
+      width: 55%;
+      height: inherit;
+      align-items: center;
+    }
+    nav a {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: bold;
+      color: white;
+      height: inherit;
+      text-decoration: none;
+      text-align: justify;
+    }
+    nav a:hover {
+      color: rgb(59, 82, 29);
+      text-shadow: 1px 0.5px 1.5px rgb(221, 245, 127);
+    }
+    #drop {
+      position: relative;
+      height: inherit;
+    }
+    #drop1 {
+      display: none;
+      width: 170px;
+      justify-content: space-between;
+      list-style-type: none;
+      flex-direction: column;
+      position: absolute;
+      left: -60px;
+      border-radius: 20px;
+      background-color: #70caed;
+      box-shadow: 0px 8px 16px 1px rgba(0, 0, 0);
+      padding: 10px 10px;
+      z-index: 1;
+    }
+    #drop:hover #drop1 {
+      display: flex;
+    }
+    #logo {
+      font-family: Arial;
+      position: absolute;
+      right: 20px;
+      margin: 0;
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      text-rendering: #000;
+      text-shadow: 1px 1px 2px black, 0px 0px 5px #0f1ae8,
+        0px 0px 20px rgb(5, 5, 248);
+    }
+    #center {
+      padding: 10px 10px 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    #left {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      width: 45%;
+    }
+    #right {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      width: 55%;
+    }
+    #slogan {
+      text-shadow: 1px 1px white;
+      text-align: left;
+      text-indent: -100px;
+    }
+    article {
+      text-align: left;
+      width: 100%;
+      font-size: 14.5px;
+    }
+    article h2 {
+      line-height: 50px;
+    }
+    select {
+      cursor: pointer;
+      width: 50px;
+    }
+    option {
+      width: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2d2626;
+      border-radius: 0px;
+    }
+    .box {
+      letter-spacing: 0.5px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      border-radius: 5px;
+      border: 1px solid rgb(0, 44, 238);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      padding-inline: 3px;
+    }
+    form {
+      width: 85%;
+    }
+    input {
+      width: 95%;
+    }
+    button {
+      width: fit-content;
+      padding: 0px 2px;
+      color: #000;
+      border-radius: 5px;
+      border: 1px dashed;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <a href="http://">Home</a>
+          <div id="drop">
+            <a href="http://">Products</a>
+            <div id="drop1">
+              <a href="#">Product Development</a>
+              <a href="#"> Product Maketing</a>
+            </div>
+          </div>
+          <a href="http://">Services</a>
+          <a href="http://">About</a>
+          <a href="http://">Contact</a>
+        </nav>
+        <h2 id="logo">Blue World</h2>
+      </header>
+      <div id="center">
+        <div id="left">
+          <img
+            src="./img/Screenshot 2023-03-16 074304.png"
+            style="width: 95%"
+          />
+          <h2 id="slogan">Happiness on Earth.</h2>
+          <h4 style="color: rgba(255, 255, 255, 0.6)">
+            Inspiring destinations within your reach.
+          </h4>
+        </div>
+        <div id="right">
+          <article>
+            <h2>Your contact information</h2>
+            <p>
+              Start your travel planning right now with our on-line tour
+              registration form. Just tell us a little about yourself and your
+              group and of our travel experts will contact you to create the
+              perfect tour package custom built for your group's needs
+            </p>
+          </article>
+          <form action="">
+            <table>
+              <tr>
+                <td><label for="title">Title</label></td>
+                <td>
+                  <select name="title" id="title" class="box">
+                    <option value="1">Mr.</option>
+                    <option value="2">Ms.</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="name">Full Name *</label></td>
+
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="First Name"
+                    class="box"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="add">Mailing Address </label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="add"
+                    id="add"
+                    class="box"
+                    placeholder="Mailing Address"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="city">City </label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="box"
+                    placeholder="City"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Country">Country</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="Country"
+                    id="Country"
+                    class="box"
+                    placeholder="Country"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="pa"
+                    >Specific questions or requests about your tour</label
+                  >
+                </td>
+                <td>
+                  <textarea
+                    id="pa"
+                    name="pa"
+                    rows="5"
+                    cols="25"
+                    class="box"
+                    placeholder="Specific questions or requests about your tour"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <p style="text-align: center; font-size: small; font-weight: bold">
+          <i class="fa fa-copyright" style="font-size: 10px"></i>2016 Blue World
+          Tours. All rights reserved <br />Contact information: Ho Yen Ngoc |
+          20107631 | Testing date: 16 March 2023
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
