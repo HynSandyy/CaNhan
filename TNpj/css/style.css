@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond&display=swap');
+*{
+        padding: auto;
+        margin: 0 auto;
+        font-family: 'Dancing Script', cursive;
+       
+}
+body{ 
+        background: linear-gradient(70deg, #0d5e3a, #151b51);
+        background-size: 400% 400%;
+        -webkit-animation: AnimationName 20s ease infinite;
+        -moz-animation: AnimationName 20s ease infinite;
+        animation: AnimationName 20s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 51%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 51%}
+    }
+header{
+        display: flex;
+        color: rgb(255, 255, 255);
+        height: 45px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(152deg, rgba(27,25,61,0.8) 1%, rgba(3,53,22,0.7) 10%, rgba(6,9,64,1) 43%, rgba(229, 225, 200, 0.57) 85%);
+        background-size: contain;
+        justify-content: space-between;
+        align-items: center;
+}
+header:hover{
+        background-size: 150% ;
+        animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+}
+a{
+        text-decoration: none;
+        font-size:30px;
+        color:rgb(255, 255, 255);
+}
+.H_right{
+        display: flex;
+        align-self: flex-end;
+}
+.H_left{
+        display: flex;
+        width: 15%;
+}
+.logo{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        font-family: 'Dancing Script', cursive;
+
+        font-weight: normal;
+        font-size: 5em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        transform: translate3d(-50%,-50%,0);
+        z-index: -1;
+}
