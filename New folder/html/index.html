@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </head>
+  <header>
+    <div class="nav navbar navbar-expand-lg bg-warning">
+      <img src="/img/logo7.png" alt="logo" class="navbar-brand" />
+      <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Dịch vụ</a></li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-toggle="modal" data-target="#mymodal"
+          >Ký gửi hàng hóa</a
+        >
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+    </div>
+  </header>
+  <body>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-8 border">
+          <p>&lt;Form&gt;</p>
+        </div>
+        <article class="col-4 border">
+          <h2>Qui định thanh toán</h2>
+          <ul style="list-style-type: square">
+            <li>Khách cọc từ 70% - 100% số tiền của đơn hàng.</li>
+            <li>Hàng về sau 24-48 tiếng kể từ khi kho Trung Quốc ký nhận.</li>
+            <li>
+              Shop sẽ thanh lý đơn hàng nếu sau 1 tuần khách hàng không thanh
+              toán tiền nhận hàng.
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div>
+        <h2 class="text-primary">Danh sách kiện hàng hóa gửi</h2>
+        <table class="table table-bordered table-striped" id="dsach">
+          <thead>
+            <tr>
+              <th style="width: 5%">STT</th>
+              <th style="width: 10%">Số serial</th>
+              <th style="width: 25%">Mô tả kiện hàng</th>
+              <th style="width: 25%">Hình ảnh</th>
+              <th style="width: 15%">Trọng lượng (kg)</th>
+              <th style="width: 15%">Phí vận chuyển (VND)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>1</td>
+            <td>OZMO-600</td>
+            <td>Robot Hút Bụi Lau Nhà Dreame D9 Pro</td>
+            <td>
+              <img src="../img/Pro9.PNG" alt="Robot Hút Bụi Lau Nhà Dreame" />
+            </td>
+            <td>3.5</td>
+            <td>122500</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>SMS25EI00G</td>
+            <td>Máy rửa chén độc lập Bosch TGB - Serie 2</td>
+            <td>
+              <img
+                src="..\img\Bosch TGB.SMS25EI00G.PNG"
+                alt="Máy rửa chén độc lập Bosch TGB - Serie 2"
+                srcset=""
+              />
+            </td>
+            <td>48.25</td>
+            <td>1447500</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td>Thùng Cherry</td>
+            <td><img src="../img/Cherry.PNG" alt="" />../img/Cherry.PNG</td>
+            <td>55kg</td>
+            <td>825000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <footer class="footer p-md-1 bg-warning">
+    <h4 class="text-primary text-center">
+      Mã số: 20107631 - Họ tên: Hồ Yến Ngọc
+    </h4>
+  </footer>
+  <div class="modal fade" id="mymodal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Thông tin kiện hàng hóa gửi</h3>
+        </div>
+        <div class="modal-body">
+          <form action="" id="form">
+            <table class="table table-responsive-lg table-borderless">
+              <tr class="">
+                <td><label for="serial">Số serial: </label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="serial"
+                    placeholder="OZMO-600"
+                    class="form-control"
+                    name="serial"
+                  />
+                  <span id="serial-warning" class="text-danger">*</span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="name">Mô tả kiện hàng: </label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Robot Hút Bụi Lau Nhà Dreame D9 Pro"
+                    class="form-control"
+                  />
+                  <span id="name-warning" class="text-danger">*</span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="pic">Hình ảnh </label></td>
+                <td>
+                  <input type="file" id="pic" class="form-control-file" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="weight">Trọng lượng (kg) </label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="weight"
+                    placeholder="3.5"
+                    class="form-control"
+                  />
+                  <span id="weight-warning" class="text-danger">*</span>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cost">Chi phí vận chuyển (VND) </label></td>
+                <td>
+                  <input
+                    type="text"
+                    readonly
+                    id="cost"
+                    placeholder="3.5"
+                    class="form-control"
+                  />
+                </td>
+              </tr>
+            </table>
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-outline-primary btn-group-sm"
+            >
+              Xác nhận
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+<script>
+  $(document).ready(function () {
+    function validate() {
+      var serial = $("#serial").val();
+      var name = $("#name").val();
+      var weight = $("#weight").val();
+      var regexseri = /^([A-Z-0-9]){6,}$/g;
+      if (serial.trim() === "") {
+        $("#serial-warning").html("Dấu * là thông tin bắt buộc");
+        return false;
+      } else {
+        if (!regexseri.test(serial)) {
+          $("#serial-warning").html(
+            "Số serial có thể gồm các ký tự chữ cái hoa, dấu _ và các ký số; chiều dài ít nhất là 6"
+          );
+          return false;
+        }
+      }
+      if (name.trim() === "") {
+        $("#name-warning").html("Dấu * là thông tin bắt buộc");
+        return false;
+      }
+      if (weight.trim() === "") {
+        $("#weight-warning").html("Dấu * là thông tin bắt buộc");
+        return false;
+      } else {
+        if (parseInt(weight) > 0) {
+          $("#weight-warning").html("Trọng lượng là số > 0");
+          return false;
+        }
+      }
+      return true;
+    }
+    var stt = 4;
+    $("#submit").click(function () {
+      if (validate() === true) {
+        var serial = $("#serial").val();
+        var name = $("#name").val();
+        var row =
+          "<tr><td>" +
+          stt +
+          "</td><td>" +
+          serial +
+          "</td><td>" +
+          name +
+          "</td><td><img src='../img/Dyson11.PNG'/></td><td>55kg</td><td>825000</td></tr>";
+        stt++;
+        $("#dsach").append(row);
+        $("#mymodal").modal("hide");
+        $("#form").trigger("reset");
+      }
+    });
+  });
+</script>
